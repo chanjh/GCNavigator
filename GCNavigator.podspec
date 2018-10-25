@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GCNavigator"
-  s.version      = "0.1.0"
+  s.version      = "0.1.1"
   s.summary      = "iOS 路由化中间件"
   s.description  = <<-DESC
 这是 iOS 路由化中间件
