@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>className</key>
+		<string>TempSearchViewController</string>
+		<key>url</key>
+		<string>/debug/tempSearch</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SYSearchResultViewController</string>
+		<key>url</key>
+		<string>https://sou-yun.com/api/poem</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>HomeViewController</string>
+		<key>url</key>
+		<string>souyun://sou-yun.com/api/v1/allusion</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>SYSearchResultViewController</string>
+		<key>url</key>
+		<string>http://sou-yun.com/api/v1/Rhyme</string>
+	</dict>
+</array>
+</plist>

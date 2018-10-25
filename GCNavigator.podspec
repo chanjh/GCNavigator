@@ -9,9 +9,10 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/chanjh/GCNavigator"
-  s.license      = "MIT"
-  s.author             = { "Gill Chan" => "hi@chanjh.com" }
+  s.license      = 'MIT'
+  s.author       = { "Gill Chan" => "hi@chanjh.com" }
+  s.platform     = :ios
   s.source       = { :git => "https://github.com/chanjh/GCNavigator.git", :tag => "#{s.version}" }
-  s.source_files  = 'GCNavigator/**/*'
+  s.source_files = 'GCNavigator/**/*'
 
 end
