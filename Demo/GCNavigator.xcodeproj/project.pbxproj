@@ -13,6 +13,18 @@
 		0D09A74D21816EE000211F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D09A74C21816EE000211F95 /* Assets.xcassets */; };
 		0D09A75021816EE000211F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D09A74E21816EE000211F95 /* LaunchScreen.storyboard */; };
 		0D09A75321816EE000211F95 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A75221816EE000211F95 /* main.m */; };
+		0D09A7692181933F00211F95 /* GCNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A75A2181933F00211F95 /* GCNavigator.m */; };
+		0D09A76A2181933F00211F95 /* NSURL+Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A75D2181933F00211F95 /* NSURL+Scheme.m */; };
+		0D09A76B2181933F00211F95 /* NSString+URLCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A75E2181933F00211F95 /* NSString+URLCode.m */; };
+		0D09A76C2181933F00211F95 /* NSString+Query.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A75F2181933F00211F95 /* NSString+Query.m */; };
+		0D09A76D2181933F00211F95 /* GCRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A7642181933F00211F95 /* GCRouter.m */; };
+		0D09A76E2181933F00211F95 /* GCRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A7672181933F00211F95 /* GCRouterManager.m */; };
+		0D09A76F2181933F00211F95 /* GCNavigatorRegistry.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D09A7682181933F00211F95 /* GCNavigatorRegistry.plist */; };
+		0D09A7792181938200211F95 /* SYSearchResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A7702181938100211F95 /* SYSearchResultViewController.m */; };
+		0D09A77A2181938200211F95 /* SYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A7712181938100211F95 /* SYTabBarController.m */; };
+		0D09A77B2181938200211F95 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D09A7762181938200211F95 /* HomeViewController.xib */; };
+		0D09A77C2181938200211F95 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A7772181938200211F95 /* HomeViewController.m */; };
+		0D09A77D2181938200211F95 /* TempSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D09A7782181938200211F95 /* TempSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +38,28 @@
 		0D09A74F21816EE000211F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D09A75121816EE000211F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D09A75221816EE000211F95 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0D09A75A2181933F00211F95 /* GCNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCNavigator.m; sourceTree = "<group>"; };
+		0D09A75C2181933F00211F95 /* NSString+Query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Query.h"; sourceTree = "<group>"; };
+		0D09A75D2181933F00211F95 /* NSURL+Scheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Scheme.m"; sourceTree = "<group>"; };
+		0D09A75E2181933F00211F95 /* NSString+URLCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLCode.m"; sourceTree = "<group>"; };
+		0D09A75F2181933F00211F95 /* NSString+Query.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Query.m"; sourceTree = "<group>"; };
+		0D09A7602181933F00211F95 /* NSURL+Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Scheme.h"; sourceTree = "<group>"; };
+		0D09A7612181933F00211F95 /* NSString+URLCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLCode.h"; sourceTree = "<group>"; };
+		0D09A7622181933F00211F95 /* GCNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNavigator.h; sourceTree = "<group>"; };
+		0D09A7642181933F00211F95 /* GCRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCRouter.m; sourceTree = "<group>"; };
+		0D09A7652181933F00211F95 /* GCRouterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCRouterManager.h; sourceTree = "<group>"; };
+		0D09A7662181933F00211F95 /* GCRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCRouter.h; sourceTree = "<group>"; };
+		0D09A7672181933F00211F95 /* GCRouterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCRouterManager.m; sourceTree = "<group>"; };
+		0D09A7682181933F00211F95 /* GCNavigatorRegistry.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GCNavigatorRegistry.plist; sourceTree = "<group>"; };
+		0D09A7702181938100211F95 /* SYSearchResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYSearchResultViewController.m; sourceTree = "<group>"; };
+		0D09A7712181938100211F95 /* SYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTabBarController.m; sourceTree = "<group>"; };
+		0D09A7722181938100211F95 /* SYSearchResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYSearchResultViewController.h; sourceTree = "<group>"; };
+		0D09A7732181938100211F95 /* SYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTabBarController.h; sourceTree = "<group>"; };
+		0D09A7742181938100211F95 /* TempSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempSearchViewController.h; sourceTree = "<group>"; };
+		0D09A7752181938200211F95 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		0D09A7762181938200211F95 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		0D09A7772181938200211F95 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		0D09A7782181938200211F95 /* TempSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +92,10 @@
 		0D09A74221816EDF00211F95 /* GCNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				0D09A7592181933F00211F95 /* GCNavigator */,
 				0D09A74321816EDF00211F95 /* AppDelegate.h */,
 				0D09A74421816EDF00211F95 /* AppDelegate.m */,
+				0D09A77E2181938800211F95 /* VCs */,
 				0D09A74621816EDF00211F95 /* ViewController.h */,
 				0D09A74721816EDF00211F95 /* ViewController.m */,
 				0D09A74921816EDF00211F95 /* Main.storyboard */,
@@ -69,6 +105,59 @@
 				0D09A75221816EE000211F95 /* main.m */,
 			);
 			path = GCNavigator;
+			sourceTree = "<group>";
+		};
+		0D09A7592181933F00211F95 /* GCNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				0D09A7622181933F00211F95 /* GCNavigator.h */,
+				0D09A75A2181933F00211F95 /* GCNavigator.m */,
+				0D09A75B2181933F00211F95 /* Category */,
+				0D09A7632181933F00211F95 /* GCRouter */,
+				0D09A7682181933F00211F95 /* GCNavigatorRegistry.plist */,
+			);
+			name = GCNavigator;
+			path = ../../GCNavigator;
+			sourceTree = "<group>";
+		};
+		0D09A75B2181933F00211F95 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0D09A75C2181933F00211F95 /* NSString+Query.h */,
+				0D09A75F2181933F00211F95 /* NSString+Query.m */,
+				0D09A7612181933F00211F95 /* NSString+URLCode.h */,
+				0D09A75E2181933F00211F95 /* NSString+URLCode.m */,
+				0D09A7602181933F00211F95 /* NSURL+Scheme.h */,
+				0D09A75D2181933F00211F95 /* NSURL+Scheme.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0D09A7632181933F00211F95 /* GCRouter */ = {
+			isa = PBXGroup;
+			children = (
+				0D09A7662181933F00211F95 /* GCRouter.h */,
+				0D09A7642181933F00211F95 /* GCRouter.m */,
+				0D09A7652181933F00211F95 /* GCRouterManager.h */,
+				0D09A7672181933F00211F95 /* GCRouterManager.m */,
+			);
+			path = GCRouter;
+			sourceTree = "<group>";
+		};
+		0D09A77E2181938800211F95 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				0D09A7752181938200211F95 /* HomeViewController.h */,
+				0D09A7772181938200211F95 /* HomeViewController.m */,
+				0D09A7762181938200211F95 /* HomeViewController.xib */,
+				0D09A7722181938100211F95 /* SYSearchResultViewController.h */,
+				0D09A7702181938100211F95 /* SYSearchResultViewController.m */,
+				0D09A7732181938100211F95 /* SYTabBarController.h */,
+				0D09A7712181938100211F95 /* SYTabBarController.m */,
+				0D09A7742181938100211F95 /* TempSearchViewController.h */,
+				0D09A7782181938200211F95 /* TempSearchViewController.m */,
+			);
+			path = VCs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +218,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D09A75021816EE000211F95 /* LaunchScreen.storyboard in Resources */,
+				0D09A76F2181933F00211F95 /* GCNavigatorRegistry.plist in Resources */,
+				0D09A77B2181938200211F95 /* HomeViewController.xib in Resources */,
 				0D09A74D21816EE000211F95 /* Assets.xcassets in Resources */,
 				0D09A74B21816EDF00211F95 /* Main.storyboard in Resources */,
 			);
@@ -141,9 +232,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D09A76D2181933F00211F95 /* GCRouter.m in Sources */,
+				0D09A7792181938200211F95 /* SYSearchResultViewController.m in Sources */,
 				0D09A74821816EDF00211F95 /* ViewController.m in Sources */,
+				0D09A76A2181933F00211F95 /* NSURL+Scheme.m in Sources */,
+				0D09A7692181933F00211F95 /* GCNavigator.m in Sources */,
+				0D09A76C2181933F00211F95 /* NSString+Query.m in Sources */,
 				0D09A75321816EE000211F95 /* main.m in Sources */,
+				0D09A77D2181938200211F95 /* TempSearchViewController.m in Sources */,
+				0D09A76E2181933F00211F95 /* GCRouterManager.m in Sources */,
+				0D09A76B2181933F00211F95 /* NSString+URLCode.m in Sources */,
+				0D09A77A2181938200211F95 /* SYTabBarController.m in Sources */,
 				0D09A74521816EDF00211F95 /* AppDelegate.m in Sources */,
+				0D09A77C2181938200211F95 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
