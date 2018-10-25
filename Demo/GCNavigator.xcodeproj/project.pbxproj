@@ -95,6 +95,7 @@
 				0D09A7592181933F00211F95 /* GCNavigator */,
 				0D09A74321816EDF00211F95 /* AppDelegate.h */,
 				0D09A74421816EDF00211F95 /* AppDelegate.m */,
+				0D09A7682181933F00211F95 /* GCNavigatorRegistry.plist */,
 				0D09A77E2181938800211F95 /* VCs */,
 				0D09A74621816EDF00211F95 /* ViewController.h */,
 				0D09A74721816EDF00211F95 /* ViewController.m */,
@@ -114,7 +115,6 @@
 				0D09A75A2181933F00211F95 /* GCNavigator.m */,
 				0D09A75B2181933F00211F95 /* Category */,
 				0D09A7632181933F00211F95 /* GCRouter */,
-				0D09A7682181933F00211F95 /* GCNavigatorRegistry.plist */,
 			);
 			name = GCNavigator;
 			path = ../../GCNavigator;

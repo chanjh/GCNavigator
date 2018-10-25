@@ -27,6 +27,15 @@
 
 # pragma mark - Register
 /**
+ * 可用于注册的 Plist 文件
+ * 多次调用会覆盖
+ * 格式：[
+        {"className": vcClass
+         "url": url},
+        ]
+ */
+- (void)configName:(NSString *)plistName;
+/**
  * GCNavigator 支持多种 URL Scheme
  * 如果注册 URL 的 Scheme 或者 Host 为空，会认为忽略二者的影响，后期同一个 URL_Path 都会跳转到同一个视图
  * 如果需要注册强关联 URL Scheme 和 Host 的逻辑，请同时带上二者

@@ -19,21 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 注册
-    NSArray *registry = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GCNavigatorRegistry" ofType:@"plist"]];
-    for (NSDictionary *meg in registry){
-        NSString *className;
-        NSURL *url;
-        if([meg valueForKey:@"className"]){
-            className = meg[@"className"];
-        }
-        if([meg valueForKey:@"url"]){
-            url = [NSURL URLWithString:meg[@"url"]];
-        }
-        if(className && url){
-            [GCSharedNavigator registerURL:url targetTo:NSClassFromString(className)];
-        }
-    }
-    
+    [GCSharedNavigator configName:@"GCNavigatorRegistry"];
     // 初始化 ViewController
     SYTabBarController *tabController = [[SYTabBarController alloc]init];
     HomeViewController *home = [[HomeViewController alloc]init];

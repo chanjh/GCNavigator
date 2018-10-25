@@ -28,6 +28,23 @@
     });
     return shared;
 }
+
+- (void)configName:(NSString *)plistName{
+    NSArray *registry = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:plistName ofType:@"plist"]];
+    for (NSDictionary *meg in registry){
+        NSString *className;
+        NSURL *url;
+        if([meg valueForKey:@"className"]){
+            className = meg[@"className"];
+        }
+        if([meg valueForKey:@"url"]){
+            url = [NSURL URLWithString:meg[@"url"]];
+        }
+        if(className && url){
+            [GCSharedNavigator registerURL:url targetTo:NSClassFromString(className)];
+        }
+    }
+}
 # pragma mark - Register
 - (void)registerURL:(NSURL *)url targetTo:(Class)vcClass{
     if(!url){
