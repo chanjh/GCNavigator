@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/chanjh/GCNavigator"
   s.license      = 'MIT'
   s.author       = { "Gill Chan" => "hi@chanjh.com" }
-  s.platform     = :ios
+  s.platform     = :ios, '10.0'
   s.source       = { :git => "https://github.com/chanjh/GCNavigator.git", :tag => "#{s.version}" }
   s.source_files = 'GCNavigator/**/*'
 
