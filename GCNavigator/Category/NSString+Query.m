@@ -15,7 +15,14 @@
     for (NSString *queryStr in queryStrs){
         if([queryStr containsString:@"="]){
             NSArray *result = [queryStr componentsSeparatedByString:@"="];
-            [dict addEntriesFromDictionary:@{[result.firstObject URLDecodedString]:[result.lastObject URLDecodedString]}];
+            NSString *key = [result.firstObject URLDecodedString];
+            NSString *value = [result.lastObject URLDecodedString];
+            if(!key || !value) {
+                NSAssert(NO, @"URL 转码错误");
+            } else {
+                [dict addEntriesFromDictionary:@{key: value}];
+            }
+            
         }
     }
     if(dict.allKeys.count){
