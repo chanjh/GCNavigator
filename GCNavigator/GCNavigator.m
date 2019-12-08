@@ -61,6 +61,46 @@
     [GCRouterManager unregisterURL:url forClass:vcClass];
 }
 # pragma mark - Push and Pop
+
+- (BOOL)pushToViewController:(UIViewController *)toVC
+                    animated:(BOOL)animated
+                  completion:(void(^)(void))completion {
+    UIViewController *topMost = [self getTopViewControllerAtApplication];
+    if(!topMost.navigationController){
+        [self handleWithNoNavgationControllerForVC:topMost];
+        return NO;
+    }
+    if (!toVC) {
+        return NO;
+    }
+    [topMost.navigationController pushViewController:toVC animated:animated];
+    if([toVC respondsToSelector:@selector(gcNavgator:fromURL:recieveParameters:)]){
+//        [((UIViewController <GCNavigatorDelegate> *)toVC) gcNavgator:self
+//                                                             fromURL:url
+//                                                   recieveParameters:[self getParametersWithURL:url]];
+    }
+    
+    if(completion){completion();}
+    return YES;
+}
+
+- (BOOL)presentToViewController:(UIViewController *)toVC
+                       animated:(BOOL)animated
+                     completion:(void(^)(void))completion {
+    UIViewController *topMost = [self getTopViewControllerAtApplication];
+    if(!toVC){
+        return NO;
+    }
+    if([toVC respondsToSelector:@selector(gcNavgator:fromURL:recieveParameters:)]){
+//        [((UIViewController <GCNavigatorDelegate> *)toVC) gcNavgator:self
+//                                                             fromURL:url
+//                                                   recieveParameters:[self getParametersWithURL:url]];
+    }
+    [topMost presentViewController:toVC
+                          animated:animated
+                        completion:completion];
+    return YES;
+}
 - (BOOL)pushToURL:(NSURL *)url
          animated:(BOOL)animated
        completion:(void(^)(void))completion{
@@ -155,6 +195,9 @@
 }
 
 # pragma mark - Get
++ (UIViewController *)getTopViewControllerAtApplication {
+    return [[GCNavigator shared] getTopViewControllerAtApplication];
+}
 - (UITabBarController *)getTabBarController{
     UIWindow *keyWindow = [UIApplication sharedApplication].keyWindow;
     UIViewController *rootVC = keyWindow.rootViewController;

@@ -45,8 +45,18 @@
            targetTo:(Class)vcClass;
 - (void)unregisterURL:(NSURL *)url
              forClass:(Class)vcClass;
-
+# pragma mark - ViewController
++ (UIViewController *)getTopViewControllerAtApplication;
 # pragma mark - Push & Present
+
+- (BOOL)pushToViewController:(UIViewController *)toVC
+                    animated:(BOOL)animated
+                  completion:(void(^)(void))completion;
+
+- (BOOL)presentToViewController:(UIViewController *)toVC
+                       animated:(BOOL)animated
+                     completion:(void(^)(void))completion;
+
 - (BOOL)pushToURL:(NSURL *)url
          animated:(BOOL)animated
        completion:(void(^)(void))completion;
