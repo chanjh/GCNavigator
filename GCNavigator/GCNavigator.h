@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "NSURL+Scheme.h"
 #import "NSString+Query.h"
 #import "NSString+URLCode.h"
